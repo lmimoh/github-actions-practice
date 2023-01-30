@@ -19,6 +19,7 @@ jobs:
           echo "REACT_APP_API=${{secrets.REACT_APP_API}}" >> .env
           echo "REACT_APP_CHAT=${{secrets.REACT_APP_CHAT}}" >> .env
           cat .env
+        working-directory: ./client
           
       - name: Build
         run: npm run build
