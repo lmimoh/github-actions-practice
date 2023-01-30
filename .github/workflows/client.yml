@@ -16,8 +16,8 @@ jobs:
         
       - name: create env
         run: |
-          echo "REACT_APP_API=$MAP_API_KEY
-          REACT_APP_CHAT=$REACT_APP_CHAT" >> .env
+          echo "REACT_APP_API=$REACT_APP_API" >> .env
+          echo "REACT_APP_CHAT=$REACT_APP_CHAT" >> .env
         env: 
           REACT_APP_API: ${{secrets.REACT_APP_API}}
           REACT_APP_CHAT: ${{secrets.REACT_APP_CHAT}}
