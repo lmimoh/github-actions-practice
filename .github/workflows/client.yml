@@ -32,4 +32,4 @@ jobs:
             --region ap-northeast-2 \
             build s3://github-actions-prac \
             --delete
-        working-directory: ./client
+        working-directory: ./client/build
